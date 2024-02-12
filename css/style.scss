@@ -1,0 +1,167 @@
+
+// ============================ Подключение шрифтов ================================================== 
+//&display=swap - добавить при подключении через плагин
+//&subset=cyrillic-ext - добавить при подключении через плагин (необязательно)
+
+// @import 
+@import url("https://fonts.googleapis.com/css?family=Roboto:900,900italic&display=swap");
+
+//@font-face {
+    //font-family: 'Helvetica Neue';
+    //src: url('../fonts/HelveticaNeue-Roman.woff2') format('woff2'),
+       // url('../fonts/HelveticaNeue-Roman.woff') format('woff');
+    //font-weight: normal;
+    //font-style: normal;
+    //font-display: swap;
+//}
+
+/* ---------------------------------------------------------- */
+@font-face {
+	font-family: Helvetica Neue;
+	font-display: swap;
+	src: url("../fonts/HelveticaNeue-Bold.woff2") format("woff2"), url("../fonts/HelveticaNeue-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: Helvetica Neue Cond;
+	font-display: swap;
+	src: url("../fonts/HelveticaNeue-BoldCond.woff2") format("woff2"), url("../fonts/HelveticaNeue-BoldCond.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: Helvetica Neue;
+	font-display: swap;
+	src: url("../fonts/HelveticaNeue-Roman.woff2") format("woff2"), url("../fonts/HelveticaNeue-Roman.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: Helvetica Neue;
+	font-display: swap;
+	src: url("../fonts/HelveticaNeue-BlackCond.woff2") format("woff2"), url("../fonts/HelveticaNeue-BlackCond.woff") format("woff");
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: Helvetica Neue;
+	font-display: swap;
+	src: url("../fonts/HelveticaNeue-Light.woff2") format("woff2"), url("../fonts/HelveticaNeue-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+}
+/* ---------------------------------------------------------- */
+
+// =================================================================================================== 
+
+
+// ======================================== Переменные =============================================== 
+
+// -------------- Шрифты ----------------
+// Семейство шрифта по умолчанию из макета
+$fontFamily: "Helvetica Neue";
+
+// Размер шрифта по умолчанию из макета
+// $fontSize: 16px; 
+
+
+
+// -------------- Цвета ----------------
+
+$colorWhite: #FFF; 
+
+$colorWhiteHalfOpacity: #ffffff80;  // rgba(255, 255, 255, 0.50)
+
+$colorDarkGray: #252525; // для фона блоков, одного текста и текста двух кнопок
+
+$colorLightGrey: #303030; // для больших заголовков из БЭМ блока titles
+
+$colorUltraLightGrey: #D9D9D9; // для маленьких заголовков из БЭМ блока titles
+
+$colorBlack: #1A1A1A;
+
+
+
+
+
+// Цвет шрифта 
+$mainTextColor: $colorWhite; // по умолчанию (основной цвет текста)
+
+$secondaryTextColor: $colorWhiteHalfOpacity;
+
+
+
+
+
+
+// Цвет фона
+$mainBgColor: $colorBlack; // основной, фон всего полотна
+
+// $secondaryBgColor: $colorGrey; // дополнительный, фон блоков
+
+
+
+
+
+// ------------ Размеры ---------------
+// Минимальная ширина страницы
+$minWidth: 320px; 
+
+// Ширина ограничивающего контейнера из макета, включая отступы безопасности по 15px слева и справа
+$containerWidth: 1140px; 
+
+// Брейк-поинты 
+// ПК, ноутбуки, некоторые планшеты в горизонтальном положении
+$pc: $containerWidth; 
+
+// Планшеты, некоторые телефоны в горизонтальном положении
+$tablet: 991.98px; 
+
+// Телефоны L
+$mobile: 767.98px; 
+
+// Телефоны S
+$mobileSmall: 479.98px; 
+
+// =================================================================================================== 
+
+
+// ===================== Подключение обнуляющих стилей, миксинов и общих стилей ============================= 
+
+// Обнуляющие стили
+@import "base/null";
+
+// Миксины
+// @import "base/mixins";
+
+// Общие стили
+@import "base/common";
+
+// ===================================================================================================
+
+
+// ==================== Подключение стилей отдельных страниц и блоков ================================
+// /* ---------------------Основные стили-------------------------*/
+
+// Стили header
+@import "blocks/header";
+
+// Стили главной страницы
+@import "blocks/index";
+
+// Стили footer
+@import "blocks/footer";
+
+// ===================================================================================================
+
+
+
+// ======================= Подключение файла с медиазапросами =========================================
+
+// Медиазапросы
+// @import "_media";
+
+// =================================================================================================== 
+
+
